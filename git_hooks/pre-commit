@@ -18,17 +18,11 @@ black $FILES
 git add $FILES
 
 echo "Running ruff..."
-RUFF_OUTPUT=$(ruff check $FILES || true)
-
-if [ -n "$RUFF_OUTPUT" ]; then
-  echo "❌ Ruff linting failed:"
+if ! ruff check $FILES; then
   echo
-  echo "$RUFF_OUTPUT"
-  echo
-  echo "Commit aborted. Fix the lint errors above."
+  echo "❌ Ruff linting failed. Commit aborted."
   exit 1
 fi
 
 echo "✅ Pre-commit checks passed."
 exit 0
-
