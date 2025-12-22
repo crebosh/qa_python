@@ -2,7 +2,7 @@
 Repository for python automation projects
 
 ## Setup
-Create your venv with python 3.12.3
-Pull dependencies with requirements.dev.txt
-Pull dependencies with requirements.txt
-Move hooks into your `.git/hooks` directorty
+1. Create your venv with python 3.12.3
+2. Pull dependencies with requirements.dev.txt
+3. Pull dependencies with requirements.txt
+4. Move hooks into your `.git/hooks` directorty
