@@ -1,0 +1,9 @@
+web_config:
+  find_timeout: 3.0
+  base_url: 'http://www.executeautomation.com'
+  drivers:
+    - browser: chrome
+      headless: False
+
+    - browser: firefox
+      headless: True
