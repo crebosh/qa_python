@@ -1,3 +1,4 @@
 loguru==0.7.3
 pytest==9.0.2
 PyYAML==6.0.3
+selenim==4.39.0
